@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyCvMuOyehJDnmWxZNF917EfEvV330EO4gA'
+os.environ['GOOGLE_API_KEY'] = gp_first_key
 
 llm = GoogleGenerativeAI(model="gemini-pro",
                         google_api_key=os.environ['GOOGLE_API_KEY'],

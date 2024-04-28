@@ -1,4 +1,5 @@
 import os
+from keys import my_key
 import streamlit as st
 import pickle
 import time
@@ -10,7 +11,7 @@ from langchain_community.document_loaders import UnstructuredURLLoader
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyCvMuOyehJDnmWxZNF917EfEvV330EO4gA'
+os.environ['GOOGLE_API_KEY'] = my_key
 
 st.title("News Research Tool ")
 st.sidebar.title("News Article URLs")

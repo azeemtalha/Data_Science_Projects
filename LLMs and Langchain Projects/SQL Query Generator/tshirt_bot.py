@@ -8,8 +8,9 @@ from langchain.prompts import FewShotPromptTemplate
 from langchain.chains.sql_database.prompt import PROMPT_SUFFIX, _mysql_prompt
 from langchain.prompts.prompt import PromptTemplate
 from few_shots import few_shots
+from keys import my_key
 
-api_key = "AIzaSyCvMuOyehJDnmWxZNF917EfEvV330EO4gA"
+api_key = my_key
 def get_few_shot_db_chain():
     llm = GoogleGenerativeAI(model="gemini-pro",
                             google_api_key=api_key,

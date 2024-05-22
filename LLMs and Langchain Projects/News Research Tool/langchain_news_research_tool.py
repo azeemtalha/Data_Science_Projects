@@ -1,3 +1,4 @@
+from keys import first_key
 import pickle
 import os
 import time
@@ -24,7 +25,7 @@ file_path = "faiss_store_openai.pkl"
 
 main_placeholder = st.empty()
 
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyCvMuOyehJDnmWxZNF917EfEvV330EO4gA'
+os.environ['GOOGLE_API_KEY'] = first_key
 
 llm = GoogleGenerativeAI(model="gemini-pro",
                         max_output_tokens=1024,
